@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Cardo', serif;
+  font-family: 100;
+  background-color: #eCeCeC;
+}
+h1,
+h2,
+h3,
+.title {
+  font-family: 'Montserrat', sans-serif;
+}
+.cont {
+  width: 900px;
+  position: relative;
+  margin: auto;
+}
+.cont header {
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 20;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: #fff;
+}
+.cont header .title {
+  font-size: 1.3rem;
+}
+.cont header .slogan {
+  font-size: 1rem;
+  vertical-align: middle;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.hero_cont {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+}
+.hero_cont .me {
+  color: #F54B4B;
+  font-family: Helvetica;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  text-align: center;
+  width: 210px;
+  height: 210px;
+  box-sizing: border-box;
+  border-radius: 2000px;
+  padding: 20px;
+  padding-top: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+}
+.hero_cont .me .slogan {
+  color: #444;
+  font-size: 1rem;
+}
+.hero {
+  position: relative;
+  top: -220px;
+  width: 100%;
+}
+.main {
+  overflow: auto;
+  margin-bottom: 100px;
+  padding: 50px;
+  min-height: 300px;
+  background-color: #fff;
+}
+.main > h2 {
+  margin-bottom: 40px;
+}
+.main .grid {
+  transition: transform .4s;
+  float: left;
+  width: 30.833%;
+  height: 250px;
+  background-color:black;
+  margin: 10px;
+  position: relative;
+}
+.main .grid.not-empty:hover {
+  transform: scale(1.1, 1.1);
+}
+.main .grid .title {
+  font-family: inherit;
+  font-weight:bold;
+  color: #fff;
+  line-height: 50px;
+  vertical-align: top;
+  text-align: right;
+  padding-right: 12px;
+}
+.main .grid:not(.not-empty)::before {
+  content: 'Comming Soon';
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.disc
+{
+  font-family: 'Cardo', serif;
+  color: blue;
+  margin: 10px;
+  
+}
+.lab
+{
+ font-family: monospace; 
+ color: white;
+ font-weight: bold;
+ font-size: 23px;
+ padding-left: 10px;
+ padding-top: 10px;
+ 
+}
+.labdisc
+{
+  font-family:fantasy;
+  font-size: 17px;
+  padding-top: 25px;
+  padding-left:10px;
+  padding-right: 5px;
+}
+#credit{
+	display: inline-block;
+    width: 100%;
+	min-height: 100px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(../img//credit2.gif); 
+
+
+}
+#memgame{
+	display: inline-block;
+    width: 100%;
+	min-height: 100px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(../img//memgame.gif); 
+
+
+}
+div#memory_board{
+	background:#CCC;
+	border:#999 1px solid;
+	width:800px;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+	
+}
+div#memory_board > div{
+	background: url(tile_bg.jpg) no-repeat;
+	border:#000 1px solid;
+	width:71px;
+	height:71px;
+	float:left;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	cursor:pointer;
+	text-align:center;
+}
+#sound {
+    margin: 10px auto; width: 320px;
+}
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:pink; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
